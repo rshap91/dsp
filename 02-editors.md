@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I chose nano because it is simple and the default editor on my system. I have a basic familiarity with it from reading help docs.
 
 --
 
@@ -67,6 +67,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I chose sublime text because I've been using it for a little while now and have found it to be the best graphical editor for my taste by far. I did not like both the pycharm and spyder interfaces as I found them to dense and not simple to use. Text wrangler was a close second but I like sublimes auto-complete features as well as ease of use. It also has a bunch of keyboard short-cuts i like to use such as "cmd ?" to comment out sections.
 
  
