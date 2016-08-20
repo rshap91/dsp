@@ -7,7 +7,7 @@ def donuts(count):
     Given an int count of a number of donuts, return a string of the
     form 'Number of donuts: <count>', where <count> is the number
     passed in. However, if the count is 10 or more, then use the word
-    'many' instead of the actual count.
+    'many' instead of the actual count. 
 
     >>> donuts(4)
     'Number of donuts: 4'
@@ -18,7 +18,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count <10:
+        return 'Number of donuts: %s' %count
+    else:
+        return 'Number of donuts: many'
+    
+    
 
 
 def both_ends(s):
@@ -37,7 +42,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) <2:
+        return ''
+    else:
+        return s[:2] + s[-2:]
 
 
 def fix_start(s):
@@ -56,7 +64,9 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    first_letter = s[0]
+    rest = s[1:]
+    return first_letter + rest.replace(first_letter, '*')
 
 
 def mix_up(a, b):
@@ -74,7 +84,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    w1 = b[:2] + a[2:]
+    w2 = a[:2] + b[2:]
+    return w1 + ' ' + w2
 
 
 def verbing(s):
@@ -91,7 +103,12 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) < 3:
+        return s
+    elif s.endswith('ing'):
+        return s + 'ly'
+    else:
+        return s + 'ing'
 
 
 def not_bad(s):
