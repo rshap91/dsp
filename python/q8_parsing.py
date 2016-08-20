@@ -8,12 +8,18 @@
 
 
 import csv
+import pandas as pd
+# w pandas
+def pandas_way():
+  df = pd.read_csv('football.csv')
+  df['Goal_Ratio'] = df['Goals'] - df['Goals Allowed']
+  print df.sort_values('Goal_Ratio').reset_index().ix[0]
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
-
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
-
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+# w csv
+def csv_way():
+  with open('football.csv', 'r+') as fhand:
+    reader = csv.reader(fhand)
+    data = [row for row in reader][1:] # get rid of header row
+    goal_ratios = {r[0]: int(r[5]) - int(r[6]) for r in data}
+    print sorted(goal_ratios.items(), key = lambda t: t[1])[0]
+    
