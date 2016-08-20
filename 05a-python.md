@@ -35,10 +35,11 @@ say you had a collection of names and ages:
   kids = [('john', 14), ('abbey', 17), ('mark', 13), ('chelsea', 21)]
 ```
 you could sort these by name alphabetically by referencing the first item in each tuple -
-``` sorted(kids, key = lambda k : k[0])```
+```sorted(kids, key = lambda k : k[0])```
 or you could sort by age by referencing the second item
 
-``` sorted(kids, key = lambda k: k[1]) ```
+```sorted(kids, key = lambda k: k[1])```
+
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
