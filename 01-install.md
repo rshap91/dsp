@@ -46,13 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I installed v2 because that's the one I learned on and as far as my experience goes it is still commonly used amongst many python programmers.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> in Terminal type "which python" to see the path on the computer to the python you are using. if the version is not included in the path just type 'python' to start the python interpreter which gives you a heading upon start-up which includes the version.
 
  
 
