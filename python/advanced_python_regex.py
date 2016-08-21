@@ -33,6 +33,26 @@ MS       2.0
 JD       1.0
 '''
 
+# Without Pandas
+import csv
+with open('faculty.csv', 'r+') as fhand:
+  reader = csv.reader(fhand)
+  data = [row for row in reader][1:] # drop header row
+  print data
+
+  degrees = map(lambda r: r[1], data)
+  # format
+  degrees.remove('0')# get rid of the '0' degree
+  degrees = map(lambda r: r.replace('.','').strip(), degrees) # get rid of periods
+  degrees = map(lambda r: r.split(' '), degrees) # split those with multiple degrees
+  unique_degs = set(sum(degrees))
+  len(unique_degs) # 8
+  
+  # value counts
+  degs = sum(degrees)
+  v_counts = {d: degs.count(d) for d in unique_degs}
+  
+
 
 # Q2 ------------------
 
@@ -49,7 +69,8 @@ Name: title, dtype: int64
 '''
 
 
-# Q3  ------------------
+
+# Q3  & Q4 ------------------
 
 # ...
 df.email 
@@ -58,9 +79,21 @@ df.email
 
 emails = df.email.tolist()
 
-# Q4   ------------------
 
 all_domains = map(lambda e: e.split('@')[-1], emails)
 len(set(all_domains)) # 4
+
+
+
+# without pandas
+import re
+
+with open('faculty.csv', 'r+') as fhand:
+  data = fhand.read()
+  emails = re.findall(r',([a-z1-9]+@.+)\n?', data)
+  domains = map(lambda e: e.split('@')[1], emails)
+  unique_doms = set(domains)
+
+  print unique_doms # {'cceb.med.upenn.edu', 'email.chop.edu', 'mail.med.upenn.edu', 'upenn.edu'}
 
 
