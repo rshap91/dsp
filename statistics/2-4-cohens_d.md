@@ -1,4 +1,6 @@
->>>  ``` # Ex 2.4
+>>>  ``` 
+# Ex 2.4
+
 '''
 Using the variable totalbrthwgt
 investigate whether first born babies are lighter or heavier than others. 
