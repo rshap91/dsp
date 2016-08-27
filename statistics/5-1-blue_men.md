@@ -1,24 +1,19 @@
 [Think Stats Chapter 5 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2006.html#toc50) (blue men)
 
->>
+>> In order to join Blue Man Group, you have to be male between 5’10” and 6’1” What percentage of the U.S. male population is in this range? 
 
-
-# Ex 5.1 ---------------------------------------------------------------------------------
-
-'''
-In order to join Blue Man Group, you have to be male between 5’10” and 6’1”
-What percentage of the U.S. male population is in this range? 
-'''
+```
 import brfss
 import scipy
 df = brfss.ReadBrfss()
+```
 
+I got 47.3% cuz i used the actual data from df...
+They got 34% cuz they just used a normal distribution
 
-# i got 47.3% cuz i used the actual data from df...
-# they got 34% cuz they just used a normal distribution
+##### MY WAY:
 
-# MY WAY:
-
+```
 # 1 is men
 # 2 is women
 
@@ -44,9 +39,11 @@ num_blue_men/float(num_men) # 47%...
 p_low = len(men[men.htm3<177.8])/float(num_men) #40%
 p_high = len(men[men.htm3<185.4])/float(num_men) # 87%
 p_high - p_low # 47%
+```
 
+##### THEIR WAY:
 
-# THEIR WAY:
+```
 avg = 178
 sd = 7.7
 
@@ -54,10 +51,11 @@ norm_dis = scipy.stats.norm(loc = avg, scale = sd)
 plow = norm_dis.cdf(low) # 49%
 phigh = norm_dis.cdf(high) # 83%
 perc = phigh-plow # 34%
+```
 
-# The Point of all this is that you can find the probability of people within a range 
-	# by subtracting the high cdf from the low cdf
-# This is mainly for continous random variables
+The Point of all this is that you can find the probability of people within a range by subtracting the high cdf from the low cdf.
+
+This is mainly for continous random variables
 
 
 
