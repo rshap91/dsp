@@ -1,4 +1,4 @@
-# Ex 2.4
+>>>  ``` # Ex 2.4
 '''
 Using the variable totalbrthwgt
 investigate whether first born babies are lighter or heavier than others. 
@@ -30,3 +30,5 @@ var2 = other_wgt.var()
 var_pool = (len(first_wgt)*var1 + len(other_wgt)*var2)/(len(first_wgt)+len(other_wgt)) # just 1.98 lb
 d_stat = (grp1 - grp2)/np.sqrt(var_pool) # -0.0887
 # the diff in means is about 0.0887 pooled standard deviations... seems like nothing?
+
+```
