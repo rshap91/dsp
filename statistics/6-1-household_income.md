@@ -18,7 +18,7 @@ samp[samp<samp.mean()]
 # percent of housolds in samp that are below the mean income
 len(samp[samp<samp.mean()])/float(len(samp)) # 45%
 ``` 
-(<img src = "https://github.com/rshap91/dsp/blob/master/statistics/ch6_232_samp_hist.png" width = 0.5>)
+<img src = "https://github.com/rshap91/dsp/blob/master/statistics/ch6_232_samp_hist.png" width = 400px>
 
 ```
 means = []
@@ -56,7 +56,7 @@ medians increase from 3-5 but then plateau
 skews goes toward zero as log_upper goes to 6
 pearson_skews goes toward zero as log_upper goes to 6
 
-(<img src = 'https://github.com/rshap91/dsp/blob/master/statistics/ch6_269_means_medians_skews_of_samp.png' widht = 0.5>)
+(<img src = 'https://github.com/rshap91/dsp/blob/master/statistics/ch6_269_means_medians_skews_of_samp.png' widht = 400px>)
 
 Might be interesting to look at the histograms for each samp varying log_upper
 
@@ -74,6 +74,6 @@ for u in range(3,7):
 plt.subplots_adjust(hspace = 0.34, wspace = 0.44)
 ```
 
-(<img src = 'https://github.com/rshap91/dsp/blob/master/statistics/ch6_289_multi_samp_hists.png' width = 0.5>)
+(<img src = 'https://github.com/rshap91/dsp/blob/master/statistics/ch6_289_multi_samp_hists.png' width = 400px>)
 
 I feel like i must be doing this wrong because apparently the skew decreases (goes to 0) once you get to log_upper = 6
