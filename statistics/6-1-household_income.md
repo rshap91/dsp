@@ -18,7 +18,7 @@ samp[samp<samp.mean()]
 # percent of housolds in samp that are below the mean income
 len(samp[samp<samp.mean()])/float(len(samp)) # 45%
 ``` 
-!['sample Histogram']("https://github.com/rshap91/dsp/blob/master/statistics/ch6_232_samp_hist.png")
+!("https://github.com/rshap91/dsp/blob/master/statistics/ch6_232_samp_hist.png")
 
 ```
 means = []
