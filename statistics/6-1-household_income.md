@@ -56,7 +56,7 @@ medians increase from 3-5 but then plateau
 skews goes toward zero as log_upper goes to 6
 pearson_skews goes toward zero as log_upper goes to 6
 
-<img src = 'https://github.com/rshap91/dsp/blob/master/statistics/ch6_269_means_medians_skews_of_samp.png' width = 500px>
+<img src = 'https://github.com/rshap91/dsp/blob/master/statistics/ch6_269_means_medians_skews_of_samp.png' width = 600px>
 
 Might be interesting to look at the histograms for each samp varying log_upper
 
@@ -74,6 +74,6 @@ for u in range(3,7):
 plt.subplots_adjust(hspace = 0.34, wspace = 0.44)
 ```
 
-<img src = 'https://github.com/rshap91/dsp/blob/master/statistics/ch6_289_multi_samp_hists.png' width = 600px>
+<img src = 'https://github.com/rshap91/dsp/blob/master/statistics/ch6_289_multi_samp_hists.png' width = 750px>
 
 I feel like i must be doing this wrong because apparently the skew decreases (goes to 0) once you get to log_upper = 6
