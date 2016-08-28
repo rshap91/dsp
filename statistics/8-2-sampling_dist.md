@@ -20,7 +20,11 @@ def ExpSamp(n = 10, m = 1000, lam = 2):
 
 means, medians = ExpSamp()
 plt.hist(means)
+```
 
+<img src = 'ch8_75_means_expSamples.png', width = 500px>
+
+```
 u = 1/2.
 
 # this is the Standard Error?
