@@ -16,7 +16,11 @@ birth_weight = birth_weightLB.map(lb2oz) + birth_weightOZ
 mother_age = live.agepreg 
 
 plt.scatter(mother_age, birth_weight) # nothing
+plt.title('Mothers Age vs Childs Birth Weight')
+```
+<img src = 'ch7_187_mAge_vs_cBirth_wgt.png'>
 
+```
 # Pearson
 mother_age.corr(birth_weight) # 0.068833970354109111
 # Spearman
