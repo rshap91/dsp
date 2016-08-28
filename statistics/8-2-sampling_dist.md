@@ -1,14 +1,9 @@
 [Think Stats Chapter 8 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2009.html#toc77) (scoring)
 
-# Ex 8.2 ---------------------------------------------------------------------------------
 
-'''
-Simulate 1000 10-samplings from an exp distribution where lambda = 2.
-Plot the resulting L estimates...  (1/sample_mean)
-Compute the Standard Error and the 90% Confidence interval...
-'''
+>>> Simulate 1000 10-samplings from an exp distribution where lambda = 2. Plot the resulting L estimates...  (1/sample_mean) Compute the Standard Error and the 90% Confidence interval...
 
-
+```
 def ExpSamp(n = 10, m = 1000, lam = 2):
 	means = []
 	medians = []
@@ -27,6 +22,7 @@ means, medians = ExpSamp()
 plt.hist(means)
 
 u = 1/2.
+
 # this is the Standard Error?
 rmse_means = np.sqrt(((means - u)**2).sum()/len(means)) # 1.87
 rmse_meds = np.sqrt(((medians - u)**2).sum()/len(medians)) # 2.13
