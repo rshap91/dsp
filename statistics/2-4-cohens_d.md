@@ -21,6 +21,7 @@ other_wgt.hist(bins = 12, align = 'right', color = (0.11372549019607843, 0.56862
 plt.legend()
 plt.xlabel('Weight in Lbs')
 ```
+<img src = 'ch2_140_birth_weights.png' width = 500>
 
 
 HOWEVER...
