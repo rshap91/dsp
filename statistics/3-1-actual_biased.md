@@ -15,8 +15,10 @@ for x in range(6):
 	kids_bias.Mult(x, x)
 thinkplot.PrePlot(2)
 thinkplot.Hists([kids_bias, kids_pmf]) # don't know how to do labels with thinkplot ... shmeh
+```
+<img src = 'ch3_154_num_kids.png' width = 500px>
 
-
+```
 kids_pmf.Mean() # 1.0242051550438309
 kids_bias.Mean() # 2.4618605259714772
 diff = kids_pmf.Mean() - kids_bias.Mean() # -1.44
