@@ -1,7 +1,7 @@
 [Think Stats Chapter 9 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2010.html#toc90) (resampling)
 
 >> 
-<code>
+```
 class DiffMeansResample(hypothesis.DiffMeansPermute):
 	def RunModel(self):
 		"""
@@ -25,4 +25,4 @@ pv = ht.PValue() # 0.171
 ht2 = DiffMeansResample(data)
 pv2 = ht2.PValue() #0.174
 
-</code>
+```
