@@ -12,17 +12,18 @@ class DiffMeansResample(hypothesis.DiffMeansPermute):
 		probs = pooled_dist.values
 		resamp = np.random.choice(vals, size = self.n,  p = probs), np.random.choice(vals, size = self.m, p = probs) 
 		return resamp
+```
 
+EXAMPLE CODE USED IN BOOK
 
-# EXAMPLE CODE USED IN BOOK
-
+```
 data = first.prglngth.values, other.prglngth.values
 ht = hypothesis.DiffMeansPermute(data)
 pv = ht.PValue() # 0.171
-
+```
 
 # WITH RESAMPLING
+```
 ht2 = DiffMeansResample(data)
 pv2 = ht2.PValue() #0.174
-
 ```
