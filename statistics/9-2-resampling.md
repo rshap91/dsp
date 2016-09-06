@@ -22,7 +22,7 @@ ht = hypothesis.DiffMeansPermute(data)
 pv = ht.PValue() # 0.171
 ```
 
-# WITH RESAMPLING
+WITH RESAMPLING
 ```
 ht2 = DiffMeansResample(data)
 pv2 = ht2.PValue() #0.174
