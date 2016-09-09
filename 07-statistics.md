@@ -81,8 +81,8 @@ H2 = elvis was a fraternal twin </pre>
 P(male|Id) = 1
 P(male|frat) = 1/2 </pre>
 
-<pre>
->> likelihood of having any twin = 1/300 + 1/125 = 17/1500 = 0.01133333
+>> <pre>
+likelihood of having any twin = 1/300 + 1/125 = 17/1500 = 0.01133333
 </pre>
 
 >> <pre>
@@ -90,13 +90,13 @@ P(Id) = 0.0033333/ 0.01133333 = 0.29 # identical twins make up 29% of all twins
 P(Frat) = 0.008 / 0.01133333 = 0.71 # fraternal twins make up 71% of all twins...
 </pre>
 
-<pre>
->> p(twins) = P(male|Id) + P(male|Frat) = 1 + 1/2 = 1.5
+>> <pre>
+p(twins) = P(male|Id) + P(male|Frat) = 1 + 1/2 = 1.5
 </pre>
 
-<pre>
+
 >> P(Id | male) = P(Id)P(male|id)/ P(twins) = 0.29 • 1 / 1.5 = **0.1933333333333333**
-</pre>
+
 
 
 ---
