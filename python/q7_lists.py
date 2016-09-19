@@ -32,7 +32,7 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    return sorted(words, key = lambda w: w.replace('x', '0'))
+    return sorted(words, key = lambda w: w.replace('x', ' '))
 
 
 def sort_last(tuples):
