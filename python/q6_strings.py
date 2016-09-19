@@ -152,6 +152,7 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    from math import ceil
     aFront = a[:int(ceil(len(a)/2.))]
     aBack = a[int(ceil(len(a)/2.)):]
     bFront = b[:int(ceil(len(b)/2.))]
